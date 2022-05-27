@@ -1,16 +1,3 @@
-// import react from "react";
-// import SignUp from "./config/router/pages/dashboard";
-
-
-// function App(){
-// return(
-  
-//     <Dashboard/>
-// )
-
-// }
-// export default App;
-
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -26,6 +13,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { Link } from "react-router-dom";
 
 
 
@@ -99,7 +87,38 @@ export default function PermanentDrawerLeft() {
         <img src=""    alt=""   />
 
                   </Typography>
+   
       </Box>
     </Box>
   );
 }
+function Accounting() {
+    return (
+      <>
+        <div>
+          <h1>Accounting</h1>
+          <ul>
+            <li>
+              <Link to="/">Accounting</Link>
+            </li>
+            <li>
+              <Link to="/">Services</Link>
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+
+          </ul>
+        </div>
+      </>
+    );
+  }
